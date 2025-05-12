@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build Docker Image') {
       steps {
-        sh 'docker build -t demo-app .'
+        sh 'docker build -t demo-app -f jenkins/Dockerfile .'
       }
     }
     stage('Push to DockerHub') {
