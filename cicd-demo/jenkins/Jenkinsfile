@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build Docker Image') {
       steps {
-        sh 'docker build -t demo-app -f ../app/Dockerfile ../app'
+        sh 'docker build -t demo-app -f app/Dockerfile app'
       }
     }
     stage('Push to DockerHub') {
