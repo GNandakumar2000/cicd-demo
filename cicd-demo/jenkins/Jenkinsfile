@@ -1,0 +1,31 @@
+pipeline {
+  agent any
+  stages {
+    stage('Clone') {
+      steps {
+        git 'https://github.com/your-username/cicd-demo.git'
+      }
+    }
+    stage('Build Docker Image') {
+      steps {
+        sh 'docker build -t demo-app .'
+      }
+    }
+    stage('Push to DockerHub') {
+      steps {
+        withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
+          sh 'echo $PASS | docker login -u $USER --password-stdin'
+          sh 'docker tag demo-app $USER/demo-app:latest'
+          sh 'docker push $USER/demo-app:latest'
+        }
+      }
+    }
+    stage('Deploy to Kubernetes') {
+      steps {
+        sh 'kubectl apply -f k8s/deployment.yaml'
+        sh 'kubectl apply -f k8s/service.yaml'
+      }
+    }
+  }
+}
+
