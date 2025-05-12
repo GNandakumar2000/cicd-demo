@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Clone') {
       steps {
-        git 'https://github.com/your-username/cicd-demo.git'
+        git credentialsId: 'GIT', url: 'https://github.com/GNandakumar2000/cicd-demo.git', branch: 'master'
       }
     }
     stage('Build Docker Image') {
