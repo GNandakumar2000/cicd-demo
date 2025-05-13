@@ -7,10 +7,13 @@ pipeline {
       }
     }
     stage('Build Docker Image') {
-      steps {
-        sh 'docker build -t demo-app -f app/Dockerfile app'
-      }
+    steps {
+        sh '''
+            cd ${WORKSPACE}
+            docker build -t demo-app -f app/Dockerfile app
+        '''
     }
+}
     stage('Push to DockerHub') {
       steps {
         withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
