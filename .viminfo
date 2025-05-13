@@ -15,7 +15,7 @@
 
 # Command Line History (newest to oldest):
 :wq!
-|2,0,1747053926,,"wq!"
+|2,0,1747128865,,"wq!"
 :q
 |2,0,1723026929,,"q"
 
@@ -32,232 +32,273 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
+""1	LINE	0
+	pipeline {
+|3,1,1,1,1,0,1747128859,"pipeline {"
+"2	LINE	0
+	  agent any
+|3,0,2,1,1,0,1747128859,"  agent any"
+"3	LINE	0
+	
+|3,0,3,1,1,0,1747128859,""
+"4	LINE	0
+	  environment {
+|3,0,4,1,1,0,1747128859,"  environment {"
+"5	LINE	0
+	    IMAGE_NAME = "demo-app"
+|3,0,5,1,1,0,1747128859,"    IMAGE_NAME = \"demo-app\""
+"6	LINE	0
+	  }
+|3,0,6,1,1,0,1747128859,"  }"
+"7	LINE	0
+	
+|3,0,7,1,1,0,1747128858,""
+"8	LINE	0
+	  stages {
+|3,0,8,1,1,0,1747128858,"  stages {"
+"9	LINE	0
+	    stage('Build Docker Image') {
+|3,0,9,1,1,0,1747128858,"    stage('Build Docker Image') {"
 
 # File marks:
-'0  13  0  ~/cicd-demo/k8s/service.yaml
-|4,48,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
-'1  17  29  ~/cicd-demo/k8s/deployment.yaml
-|4,49,17,29,1747053909,"~/cicd-demo/k8s/deployment.yaml"
-'2  31  0  ~/cicd-demo/jenkins/Jenkinsfile
-|4,50,31,0,1747053815,"~/cicd-demo/jenkins/Jenkinsfile"
-'3  6  0  ~/cicd-demo/app/Dockerfile
-|4,51,6,0,1747053782,"~/cicd-demo/app/Dockerfile"
-'4  8  2  ~/cicd-demo/app/index.js
-|4,52,8,2,1747053732,"~/cicd-demo/app/index.js"
-'5  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,53,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
-'6  303  0  /etc/zabbix/zabbix_agentd.conf
-|4,54,303,0,1723028070,"/etc/zabbix/zabbix_agentd.conf"
-'7  2  0  ~/.ssh/authorized_keys
-|4,55,2,0,1723026949,"~/.ssh/authorized_keys"
-'8  1  0  ~/.ssh/authorized_keys
-|4,56,1,0,1723026929,"~/.ssh/authorized_keys"
-'9  1  0  ~/.ssh/authorized_keys
-|4,57,1,0,1723026929,"~/.ssh/authorized_keys"
+'0  32  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,48,32,0,1747128865,"~/cicd-demo/jenkins/Jenkinsfile"
+'1  1  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,49,1,0,1747128609,"~/cicd-demo/jenkins/Jenkinsfile"
+'2  33  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,50,33,0,1747128609,"~/cicd-demo/jenkins/Jenkinsfile"
+'3  1  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,51,1,0,1747128417,"~/cicd-demo/jenkins/Jenkinsfile"
+'4  33  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,52,33,0,1747128417,"~/cicd-demo/jenkins/Jenkinsfile"
+'5  1  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,53,1,0,1747128417,"~/cicd-demo/jenkins/Jenkinsfile"
+'6  35  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,54,35,0,1747128417,"~/cicd-demo/jenkins/Jenkinsfile"
+'7  1  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,55,1,0,1747128115,"~/cicd-demo/jenkins/Jenkinsfile"
+'8  1  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,56,1,0,1747128115,"~/cicd-demo/jenkins/Jenkinsfile"
+'9  1  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,57,1,0,1747128115,"~/cicd-demo/jenkins/Jenkinsfile"
 
 # Jumplist (newest first):
+-'  32  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,32,0,1747128865,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  1  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,1,0,1747128852,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  33  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,33,0,1747128609,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  1  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,1,0,1747128590,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  33  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,33,0,1747128417,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  35  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,35,0,1747128417,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  1  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,1,0,1747128307,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  16  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,16,0,1747128115,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  9  104  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,9,104,1747128071,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  11  58  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,11,58,1747061210,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  11  64  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,11,64,1747061104,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  11  56  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,11,56,1747060976,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  11  60  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,11,60,1747060773,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  11  60  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,11,60,1747060632,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  11  42  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,11,42,1747060467,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  6  30  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,6,30,1747060435,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  6  30  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,6,30,1747060435,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  6  30  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,6,30,1747060435,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  6  30  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,6,30,1747060435,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  6  30  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,6,30,1747060435,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  6  30  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,6,30,1747060435,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  6  30  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,6,30,1747060435,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  6  30  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,6,30,1747059092,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  6  109  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,6,109,1747058984,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  34  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,34,0,1747058915,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  31  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,31,0,1747058915,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  31  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,31,0,1747058915,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  31  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,31,0,1747058915,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  31  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,31,0,1747058915,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  31  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,31,0,1747058915,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  31  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,31,0,1747058915,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  31  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,31,0,1747058915,"~/cicd-demo/jenkins/Jenkinsfile"
+-'  31  0  ~/cicd-demo/jenkins/Jenkinsfile
+|4,39,31,0,1747058915,"~/cicd-demo/jenkins/Jenkinsfile"
 -'  13  0  ~/cicd-demo/k8s/service.yaml
 |4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
--'  1  0  ~/cicd-demo/k8s/service.yaml
-|4,39,1,0,1747053922,"~/cicd-demo/k8s/service.yaml"
--'  17  29  ~/cicd-demo/k8s/deployment.yaml
-|4,39,17,29,1747053909,"~/cicd-demo/k8s/deployment.yaml"
--'  17  29  ~/cicd-demo/k8s/deployment.yaml
-|4,39,17,29,1747053909,"~/cicd-demo/k8s/deployment.yaml"
--'  1  0  ~/cicd-demo/k8s/deployment.yaml
-|4,39,1,0,1747053843,"~/cicd-demo/k8s/deployment.yaml"
--'  1  0  ~/cicd-demo/k8s/deployment.yaml
-|4,39,1,0,1747053843,"~/cicd-demo/k8s/deployment.yaml"
--'  31  0  ~/cicd-demo/jenkins/Jenkinsfile
-|4,39,31,0,1747053815,"~/cicd-demo/jenkins/Jenkinsfile"
--'  31  0  ~/cicd-demo/jenkins/Jenkinsfile
-|4,39,31,0,1747053815,"~/cicd-demo/jenkins/Jenkinsfile"
--'  31  0  ~/cicd-demo/jenkins/Jenkinsfile
-|4,39,31,0,1747053815,"~/cicd-demo/jenkins/Jenkinsfile"
--'  31  0  ~/cicd-demo/jenkins/Jenkinsfile
-|4,39,31,0,1747053815,"~/cicd-demo/jenkins/Jenkinsfile"
--'  1  0  ~/cicd-demo/jenkins/Jenkinsfile
-|4,39,1,0,1747053811,"~/cicd-demo/jenkins/Jenkinsfile"
--'  1  0  ~/cicd-demo/jenkins/Jenkinsfile
-|4,39,1,0,1747053811,"~/cicd-demo/jenkins/Jenkinsfile"
--'  1  0  ~/cicd-demo/jenkins/Jenkinsfile
-|4,39,1,0,1747053811,"~/cicd-demo/jenkins/Jenkinsfile"
--'  1  0  ~/cicd-demo/jenkins/Jenkinsfile
-|4,39,1,0,1747053811,"~/cicd-demo/jenkins/Jenkinsfile"
--'  6  0  ~/cicd-demo/app/Dockerfile
-|4,39,6,0,1747053782,"~/cicd-demo/app/Dockerfile"
--'  6  0  ~/cicd-demo/app/Dockerfile
-|4,39,6,0,1747053782,"~/cicd-demo/app/Dockerfile"
--'  6  0  ~/cicd-demo/app/Dockerfile
-|4,39,6,0,1747053782,"~/cicd-demo/app/Dockerfile"
--'  6  0  ~/cicd-demo/app/Dockerfile
-|4,39,6,0,1747053782,"~/cicd-demo/app/Dockerfile"
--'  6  0  ~/cicd-demo/app/Dockerfile
-|4,39,6,0,1747053782,"~/cicd-demo/app/Dockerfile"
--'  6  0  ~/cicd-demo/app/Dockerfile
-|4,39,6,0,1747053782,"~/cicd-demo/app/Dockerfile"
--'  6  0  ~/cicd-demo/app/Dockerfile
-|4,39,6,0,1747053782,"~/cicd-demo/app/Dockerfile"
--'  6  0  ~/cicd-demo/app/Dockerfile
-|4,39,6,0,1747053782,"~/cicd-demo/app/Dockerfile"
--'  1  0  ~/cicd-demo/app/Dockerfile
-|4,39,1,0,1747053772,"~/cicd-demo/app/Dockerfile"
--'  1  0  ~/cicd-demo/app/Dockerfile
-|4,39,1,0,1747053772,"~/cicd-demo/app/Dockerfile"
--'  1  0  ~/cicd-demo/app/Dockerfile
-|4,39,1,0,1747053772,"~/cicd-demo/app/Dockerfile"
--'  1  0  ~/cicd-demo/app/Dockerfile
-|4,39,1,0,1747053772,"~/cicd-demo/app/Dockerfile"
--'  1  0  ~/cicd-demo/app/Dockerfile
-|4,39,1,0,1747053772,"~/cicd-demo/app/Dockerfile"
--'  1  0  ~/cicd-demo/app/Dockerfile
-|4,39,1,0,1747053772,"~/cicd-demo/app/Dockerfile"
--'  1  0  ~/cicd-demo/app/Dockerfile
-|4,39,1,0,1747053772,"~/cicd-demo/app/Dockerfile"
--'  1  0  ~/cicd-demo/app/Dockerfile
-|4,39,1,0,1747053772,"~/cicd-demo/app/Dockerfile"
--'  8  2  ~/cicd-demo/app/index.js
-|4,39,8,2,1747053732,"~/cicd-demo/app/index.js"
--'  8  2  ~/cicd-demo/app/index.js
-|4,39,8,2,1747053732,"~/cicd-demo/app/index.js"
--'  8  2  ~/cicd-demo/app/index.js
-|4,39,8,2,1747053732,"~/cicd-demo/app/index.js"
--'  8  2  ~/cicd-demo/app/index.js
-|4,39,8,2,1747053732,"~/cicd-demo/app/index.js"
--'  8  2  ~/cicd-demo/app/index.js
-|4,39,8,2,1747053732,"~/cicd-demo/app/index.js"
--'  8  2  ~/cicd-demo/app/index.js
-|4,39,8,2,1747053732,"~/cicd-demo/app/index.js"
--'  8  2  ~/cicd-demo/app/index.js
-|4,39,8,2,1747053732,"~/cicd-demo/app/index.js"
--'  8  2  ~/cicd-demo/app/index.js
-|4,39,8,2,1747053732,"~/cicd-demo/app/index.js"
--'  8  2  ~/cicd-demo/app/index.js
-|4,39,8,2,1747053732,"~/cicd-demo/app/index.js"
--'  8  2  ~/cicd-demo/app/index.js
-|4,39,8,2,1747053732,"~/cicd-demo/app/index.js"
--'  8  2  ~/cicd-demo/app/index.js
-|4,39,8,2,1747053732,"~/cicd-demo/app/index.js"
--'  8  2  ~/cicd-demo/app/index.js
-|4,39,8,2,1747053732,"~/cicd-demo/app/index.js"
--'  8  2  ~/cicd-demo/app/index.js
-|4,39,8,2,1747053732,"~/cicd-demo/app/index.js"
--'  8  2  ~/cicd-demo/app/index.js
-|4,39,8,2,1747053732,"~/cicd-demo/app/index.js"
--'  8  2  ~/cicd-demo/app/index.js
-|4,39,8,2,1747053732,"~/cicd-demo/app/index.js"
--'  8  2  ~/cicd-demo/app/index.js
-|4,39,8,2,1747053732,"~/cicd-demo/app/index.js"
--'  1  0  ~/cicd-demo/app/index.js
-|4,39,1,0,1747053710,"~/cicd-demo/app/index.js"
--'  1  0  ~/cicd-demo/app/index.js
-|4,39,1,0,1747053710,"~/cicd-demo/app/index.js"
--'  1  0  ~/cicd-demo/app/index.js
-|4,39,1,0,1747053710,"~/cicd-demo/app/index.js"
--'  1  0  ~/cicd-demo/app/index.js
-|4,39,1,0,1747053710,"~/cicd-demo/app/index.js"
--'  1  0  ~/cicd-demo/app/index.js
-|4,39,1,0,1747053710,"~/cicd-demo/app/index.js"
--'  1  0  ~/cicd-demo/app/index.js
-|4,39,1,0,1747053710,"~/cicd-demo/app/index.js"
--'  1  0  ~/cicd-demo/app/index.js
-|4,39,1,0,1747053710,"~/cicd-demo/app/index.js"
--'  1  0  ~/cicd-demo/app/index.js
-|4,39,1,0,1747053710,"~/cicd-demo/app/index.js"
--'  1  0  ~/cicd-demo/app/index.js
-|4,39,1,0,1747053710,"~/cicd-demo/app/index.js"
--'  1  0  ~/cicd-demo/app/index.js
-|4,39,1,0,1747053710,"~/cicd-demo/app/index.js"
--'  1  0  ~/cicd-demo/app/index.js
-|4,39,1,0,1747053710,"~/cicd-demo/app/index.js"
--'  1  0  ~/cicd-demo/app/index.js
-|4,39,1,0,1747053710,"~/cicd-demo/app/index.js"
--'  1  0  ~/cicd-demo/app/index.js
-|4,39,1,0,1747053710,"~/cicd-demo/app/index.js"
--'  1  0  ~/cicd-demo/app/index.js
-|4,39,1,0,1747053710,"~/cicd-demo/app/index.js"
--'  1  0  ~/cicd-demo/app/index.js
-|4,39,1,0,1747053710,"~/cicd-demo/app/index.js"
--'  1  0  ~/cicd-demo/app/index.js
-|4,39,1,0,1747053710,"~/cicd-demo/app/index.js"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  5  23  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,5,23,1723030386,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  1  0  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,1,0,1723030383,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  1  0  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,1,0,1723030383,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  1  0  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,1,0,1723030383,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  1  0  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,1,0,1723030383,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  1  0  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,1,0,1723030383,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
--'  1  0  /usr/sbin/r1soft/conf/server.allow/172.16.107.245
-|4,39,1,0,1723030383,"/usr/sbin/r1soft/conf/server.allow/172.16.107.245"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
+-'  13  0  ~/cicd-demo/k8s/service.yaml
+|4,39,13,0,1747053926,"~/cicd-demo/k8s/service.yaml"
 
 # History of marks within files (newest to oldest):
+
+> ~/cicd-demo/jenkins/Jenkinsfile
+	*	1747128864	0
+	"	32	0
+	^	32	0
+	.	31	1
+	+	1	1
+	+	1	31
+	+	1	105
+	+	1	0
+	+	1	10
+	+	1	1
+	+	1	10
+	+	31	1
 
 > ~/cicd-demo/k8s/service.yaml
 	*	1747053925	0
@@ -273,13 +314,6 @@
 	.	17	29
 	+	19	33
 	+	17	29
-
-> ~/cicd-demo/jenkins/Jenkinsfile
-	*	1747053814	0
-	"	31	0
-	^	31	0
-	.	30	1
-	+	30	1
 
 > ~/cicd-demo/app/Dockerfile
 	*	1747053780	0
