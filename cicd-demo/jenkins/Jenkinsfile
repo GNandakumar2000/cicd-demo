@@ -1,33 +1,32 @@
 pipeline {
-  agent any
+    agent any
 
-  environment {
-    IMAGE_NAME = "demo-app"
-  }
-
-  stages {
-    stage('Build Docker Image') {
-      steps {
-        sh 'docker build -t $IMAGE_NAME -f ./app/Dockerfile ./app'
-      }
-    }
-
-    stage('Push to DockerHub') {
-      steps {
-        withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
-          sh 'echo $PASS | docker login -u $USER --password-stdin'
-          sh 'docker tag $IMAGE_NAME $USER/$IMAGE_NAME:latest'
-          sh 'docker push $USER/$IMAGE_NAME:latest'
+    stages {
+        stage('Build Docker Image') {
+            steps {
+                dir("${env.WORKSPACE}") {
+                    sh 'docker build -t demo-app -f app/Dockerfile app'
+                }
+            }
         }
-      }
-    }
 
-    stage('Deploy to Kubernetes') {
-      steps {
-        sh 'kubectl apply -f k8s/deployment.yaml'
-        sh 'kubectl apply -f k8s/service.yaml'
-      }
+        stage('Push to DockerHub') {
+            when {
+                expression { currentBuild.result == null || currentBuild.result == 'SUCCESS' }
+            }
+            steps {
+                sh 'echo "Push image to DockerHub (code not shown here)"'
+            }
+        }
+
+        stage('Deploy to Kubernetes') {
+            when {
+                expression { currentBuild.result == null || currentBuild.result == 'SUCCESS' }
+            }
+            steps {
+                sh 'echo "Deploying to Kubernetes (code not shown here)"'
+            }
+        }
     }
-  }
 }
 
