@@ -39,6 +39,7 @@ pipeline {
                         export KUBECONFIG=$KUBECONFIG_FILE
                         kubectl apply -f k8s/deployment.yaml
                         kubectl apply -f k8s/service.yaml
+                        kubectl rollout restart deployment/demo-app
                     '''
                 }
             }
